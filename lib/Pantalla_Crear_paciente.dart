@@ -102,12 +102,15 @@ class PCrearCuentaPaciente1 extends StatelessWidget {
               children: [
                 Image.asset(
                   'assets/pac.jpg',
-                  width: 100,
+                  width: 50,
                   fit: BoxFit.cover,
                 ),
                 
-                SizedBox(height: 20),
-
+                SizedBox(height: 10),
+                
+                Text('Nombre', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                                            
+                SizedBox(height: 10), // espacio entre botones
                 // Campo de texto para el nombre
                 ConstrainedBox(
                   constraints: BoxConstraints(maxWidth: 300),
@@ -121,7 +124,7 @@ class PCrearCuentaPaciente1 extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 20),
+                SizedBox(height: 10),
 
                 // Campo de texto para el apellido
                 ConstrainedBox(
@@ -135,8 +138,10 @@ class PCrearCuentaPaciente1 extends StatelessWidget {
                     ),
                   ),
                 ),
-
-                SizedBox(height: 20),
+              SizedBox(height: 10),
+                
+                Text('Fecha de nacimiento', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                SizedBox(height: 10),
 
                 // Campo de fecha de nacimiento (nuevo)
                 ConstrainedBox(
@@ -184,12 +189,14 @@ class PCrearCuentaPaciente2 extends StatelessWidget {
           [
                              Image.asset(
                                 'assets/pac.jpg',
-                                width: 100,
+                                width: 50,
                                 fit: BoxFit.cover,
                               ),
                              
-                              SizedBox(height: 20), // espacio entre botones
-
+                               SizedBox(height: 10), // espacio entre botones
+                              Text('Correo', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                             
+                              SizedBox(height: 10), // espacio entre botones
                               // Campo de texto para el usuario
                               ConstrainedBox(
                                       constraints: BoxConstraints(maxWidth: 300), // Ancho máximo
@@ -204,8 +211,16 @@ class PCrearCuentaPaciente2 extends StatelessWidget {
                                       ),
                               ),
 
-                              SizedBox(height: 20), // espacio entre el campo y el siguiente
 
+
+
+                             SizedBox(height: 10),
+                              
+                              Text('Contraseña', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                              SizedBox(height: 10), // espacio entre el campo y el siguiente
+
+
+                              
                               // Campo de texto para la contraseña
                               ConstrainedBox(
                                       constraints: BoxConstraints(maxWidth: 300),
@@ -220,7 +235,7 @@ class PCrearCuentaPaciente2 extends StatelessWidget {
                                       ),
                               ),
 
-                              SizedBox(height: 20), // espacio entre el campo y el siguiente
+                              SizedBox(height: 10), // espacio entre el campo y el siguiente
 
 
                               // Campo de texto para la contraseña
@@ -237,9 +252,14 @@ class PCrearCuentaPaciente2 extends StatelessWidget {
                                       ),
                               ),
 
-                              SizedBox(height: 20), // espacio entre el campo y el siguiente
+                              
 
 
+                              SizedBox(height: 10),
+                              
+                              Text('Telefono', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                              
+                              SizedBox(height: 10), // espacio entre el campo y el siguiente
                               ConstrainedBox(
                                       constraints: BoxConstraints(maxWidth: 300),
                                       child: TextFormField(
@@ -271,7 +291,7 @@ class PCrearCuentaPaciente2 extends StatelessWidget {
                                ),
                               ),
 
-                              SizedBox(height: 20), // espacio entre botones
+                              SizedBox(height: 10), // espacio entre botones
 
                               
                             
@@ -300,11 +320,11 @@ class PCrearCuentaPaciente3 extends StatelessWidget {
           [
                              Image.asset(
                                 'assets/pac.jpg',
-                                width: 100,
+                                width: 50,
                                 fit: BoxFit.cover,
                               ),
                              
-                              SizedBox(height: 20), // espacio entre botones
+                              SizedBox(height: 10), // espacio entre botones
 
                           ElevatedButton(
                               onPressed: () {
@@ -316,7 +336,7 @@ class PCrearCuentaPaciente3 extends StatelessWidget {
                               child: Text('     Crear cuenta    '),
                             ),
 
-                              SizedBox(height: 20), // espacio entre botones
+                              SizedBox(height: 10), // espacio entre botones
 
                               
                             
